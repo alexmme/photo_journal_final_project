@@ -19,8 +19,11 @@ public:
 private slots:
     void on_choose_image_clicked();
 
+    void on_save_mem_clicked();
+
 private:
     Ui::add_memory *ui;
+    QImage img;
 };
 
 #endif // ADD_MEMORY_H
