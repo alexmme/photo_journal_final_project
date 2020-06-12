@@ -13,3 +13,10 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_new_mem_button_clicked()
+{
+    hide(); //hide main window when adding memory
+    mem_window = new add_memory();
+    mem_window->show();
+}

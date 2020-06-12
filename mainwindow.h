@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "add_memory.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,8 +16,12 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_new_mem_button_clicked();
+
 private:
     Ui::MainWindow *ui;
+    add_memory *mem_window;
 };
 #endif // MAINWINDOW_H
 
