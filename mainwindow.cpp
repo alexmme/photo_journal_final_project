@@ -20,3 +20,10 @@ void MainWindow::on_new_mem_button_clicked()
     mem_window = new add_memory();
     mem_window->show();
 }
+
+void MainWindow::on_browse_button_clicked()
+{
+    hide(); //hide main window when adding memory
+    browse_window = new browse_memories();
+    browse_window->show();
+}

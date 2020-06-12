@@ -17,15 +17,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     add_memory.cpp \
+    browse_memories.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     add_memory.h \
+    browse_memories.h \
     mainwindow.h
 
 FORMS += \
     add_memory.ui \
+    browse_memories.ui \
     mainwindow.ui
 
 # Default rules for deployment.
