@@ -7,14 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>540</width>
-    <height>504</height>
+    <height>423</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
-   <widget class="QTextEdit" name="textEdit">
+  <widget class="QWidget" name="welcome">
+   <widget class="QTextEdit" name="title">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -31,7 +31,7 @@ p, li { white-space: pre-wrap; }
 &lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:36pt; color:#00cb00;&quot;&gt;Welcome to Photojournal&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="new_mem_button">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -40,11 +40,17 @@ p, li { white-space: pre-wrap; }
       <height>111</height>
      </rect>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 60, 80)</string>
+    </property>
     <property name="text">
      <string>Add New Memory</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="browse_button">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -52,6 +58,9 @@ p, li { white-space: pre-wrap; }
       <width>221</width>
       <height>111</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 60, 80)</string>
     </property>
     <property name="text">
      <string>Browse Old Memories</string>
