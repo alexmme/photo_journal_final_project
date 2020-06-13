@@ -4,7 +4,8 @@
 #include <QMainWindow>
 #include "add_memory.h"
 #include "browse_memories.h"
-#include "memory_bank.h"
+#include "memory.h"
+#include <vector>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,8 +18,6 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    void add_mem_to_bank(Memory);
-    Memory get_mem_from_bank(int);
 
 private slots:
     void on_new_mem_button_clicked();
@@ -27,6 +26,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    Memory_Bank *bank;
+    std::vector<Memory> bank;
 };
 #endif // MAINWINDOW_H
