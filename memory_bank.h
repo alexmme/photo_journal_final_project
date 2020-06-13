@@ -12,6 +12,7 @@ public:
     Memory_Bank();
     void log_memory(Memory);
     Memory get_memory(int);
+    int get_size();
 };
 
 #endif // MEMORY_BANK_H

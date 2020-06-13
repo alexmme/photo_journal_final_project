@@ -9,3 +9,7 @@ void Memory_Bank::log_memory(Memory m){
 Memory Memory_Bank::get_memory(int index){
     return mems[index];
 }
+
+int Memory_Bank::get_size(){
+    return mems.size();
+}

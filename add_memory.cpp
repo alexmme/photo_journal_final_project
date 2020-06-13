@@ -2,6 +2,7 @@
 #include "ui_add_memory.h"
 #include "memory_bank.h"
 
+
 add_memory::add_memory(Memory_Bank *m, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::add_memory),
@@ -18,7 +19,7 @@ add_memory::~add_memory()
 
 void add_memory::on_choose_image_clicked()
 {
-    QString filename = QFileDialog::getOpenFileName(this, "Choose", "", "Images (*.png, *.jpg, *.jpeg)");
+    QString filename = QFileDialog::getOpenFileName(this, "Choose", "", "Images (*.png *.jpg *.jpeg)");
     if(QString::compare(filename, QString()) != 0){ //if user actually provided filename
         QImage image;
         bool loaded = image.load(filename);
