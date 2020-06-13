@@ -19,6 +19,8 @@ public:
 private slots:
     void on_prev_clicked();
 
+    void on_next_clicked();
+
 private:
     Ui::browse_memories *ui;
     Memory_Bank *bank;

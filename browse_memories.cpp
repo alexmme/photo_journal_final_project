@@ -27,11 +27,22 @@ void browse_memories::display_memory(){
 
 void browse_memories::on_prev_clicked()
 {
-    if(index == 0){
-        index = bank->get_size() - 1;
+    if(index == 0){ //if at start of album
+        index = bank->get_size() - 1; //loop to end
     }
     else{
         index--;
+    }
+    display_memory();
+}
+
+void browse_memories::on_next_clicked()
+{
+    if(index == bank->get_size() - 1){ //if at end of album
+        index = 0; //loop to start
+    }
+    else{
+        index++;
     }
     display_memory();
 }
