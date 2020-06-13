@@ -35,5 +35,5 @@ void add_memory::on_save_mem_clicked()
     QString text = ui->mem_text->toPlainText();
     Memory mem(img, text);
     bank->log_memory(mem);
-    hide();
+    close();
 }

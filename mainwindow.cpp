@@ -20,7 +20,7 @@ void MainWindow::on_new_mem_button_clicked()
 {
     add_memory mem_window(bank);
     mem_window.setModal(true);
-    hide(); //hide main window when adding memory
+    //hide(); //hide main window when adding memory
     mem_window.exec();
 }
 
@@ -28,6 +28,6 @@ void MainWindow::on_browse_button_clicked()
 {
     browse_memories browse_window(bank);
     browse_window.setModal(true);
-    hide(); //hide main window when adding memory
+    //hide(); //hide main window when adding memory
     browse_window.exec();
 }
