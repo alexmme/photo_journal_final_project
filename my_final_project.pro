@@ -20,15 +20,13 @@ SOURCES += \
     browse_memories.cpp \
     main.cpp \
     mainwindow.cpp \
-    memory.cpp \
-    memory_bank.cpp
+    memory.cpp
 
 HEADERS += \
     add_memory.h \
     browse_memories.h \
     mainwindow.h \
-    memory.h \
-    memory_bank.h
+    memory.h
 
 FORMS += \
     add_memory.ui \

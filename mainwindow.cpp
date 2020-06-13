@@ -4,7 +4,7 @@
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
-    bank(new Memory_Bank())
+    bank(std::vector<Memory>())
 {
     ui->setupUi(this);
     this->setStyleSheet("background-color: black;");
@@ -15,12 +15,12 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::add_mem_to_bank(Memory m){
-    bank->log_memory(m);
+void MainWindow::log_memory(Memory m){
+    bank.push_back(m);
 }
 
-Memory MainWindow::get_mem_from_bank(int index){
-    return bank->get_memory(index);
+Memory MainWindow::get_memory(int index){
+    return bank[index];
 }
 
 
@@ -36,6 +36,6 @@ void MainWindow::on_browse_button_clicked()
 {
     browse_memories browse_window;
     browse_window.setModal(true);
-    hide();
+    hide(); //hide main window when adding memory
     browse_window.exec();
 }
