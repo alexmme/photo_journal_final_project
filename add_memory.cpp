@@ -1,11 +1,12 @@
 #include "add_memory.h"
 #include "ui_add_memory.h"
-#include "memory.h"
+#include "memory_bank.h"
 
-add_memory::add_memory(QWidget *parent) :
+add_memory::add_memory(Memory_Bank *m, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::add_memory),
-    img(QImage())
+    img(QImage()),
+    bank(m)
 {
     ui->setupUi(this);
 }
@@ -33,5 +34,6 @@ void add_memory::on_save_mem_clicked()
 {
     QString text = ui->mem_text->toPlainText();
     Memory mem(img, text);
-
+    bank->log_memory(mem);
+    hide();
 }

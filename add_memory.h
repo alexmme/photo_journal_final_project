@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QFileDialog>
+#include "memory_bank.h"
 
 namespace Ui {
 class add_memory;
@@ -13,7 +14,7 @@ class add_memory : public QDialog
     Q_OBJECT
 
 public:
-    explicit add_memory(QWidget *parent = nullptr);
+    explicit add_memory(Memory_Bank*, QWidget *parent = nullptr);
     ~add_memory();
 
 private slots:
@@ -24,6 +25,7 @@ private slots:
 private:
     Ui::add_memory *ui;
     QImage img;
+    Memory_Bank *bank;
 };
 
 #endif // ADD_MEMORY_H

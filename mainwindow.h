@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include "add_memory.h"
 #include "browse_memories.h"
-#include "memory.h"
+#include "memory_bank.h"
 #include <vector>
 
 QT_BEGIN_NAMESPACE
@@ -26,6 +26,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    std::vector<Memory> bank;
+    Memory_Bank *bank;
 };
 #endif // MAINWINDOW_H
