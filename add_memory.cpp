@@ -4,10 +4,10 @@
 
 add_memory::add_memory(QWidget *parent) :
     QDialog(parent),
-    ui(new Ui::add_memory)
+    ui(new Ui::add_memory),
+    img(QImage())
 {
     ui->setupUi(this);
-    img = QImage();
 }
 
 add_memory::~add_memory()
@@ -33,4 +33,5 @@ void add_memory::on_save_mem_clicked()
 {
     QString text = ui->mem_text->toPlainText();
     Memory mem(img, text);
+
 }
