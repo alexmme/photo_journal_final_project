@@ -8,11 +8,13 @@ class Memory
 {
 private:
     QImage img;
+    QString filename;
     QString text;
 public:
     Memory();
-    Memory(QImage, QString);
+    Memory(QImage, QString, QString);
     QImage getImage();
+    QString getFilename();
     QString getText();
 };
 

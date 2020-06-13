@@ -26,6 +26,7 @@ private:
     Ui::add_memory *ui;
     QImage img;
     Memory_Bank *bank;
+    QString filename;
 };
 
 #endif // ADD_MEMORY_H
