@@ -16,4 +16,6 @@ frustrating trying to commit changes locally and then push them to my github acc
 little while to get used to. Once I got the hang of it though I was able to to commit and transfer 
 my edits painlessly. 
 
-2. 
+2. My layout plan was to have the initial black window of the application say "Welcome to your Photo-Journal" in bright green
+with two red buttons on the lower half labeled "Add Entry" and "Browse". "Add Entry" would allow you to upload an image fie from your computer and add a caption of your choosing. You could then save that captioned image. The "Browse" button would 
+take you to a window with your captioned image in the center and 
