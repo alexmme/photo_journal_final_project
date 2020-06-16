@@ -7,7 +7,6 @@ MainWindow::MainWindow(QWidget *parent) :
     bank(new Memory_Bank)
 {
     ui->setupUi(this);
-    this->setStyleSheet("background-color: black;");
 }
 
 MainWindow::~MainWindow()
