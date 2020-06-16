@@ -25,4 +25,10 @@ click to go forward or backward through the images you've saved.
 
 3. In coding up this project, one problem I ran into was trying to find a way to store a user's "memories" after the app was closed and then loading the memories again when the app was opened. The strategy I attempted was to try to write all of the filenames of the pictures to one text file and all of the user's text entries to another text file. Unfortunately, as the picture filenames had to be stored as QStrings, I was not able to figure out how to write QStrings out to a file like you would a normal std::string. It seems like there should be a simple solution but I was unable to find one. This would be a great feature to add in the future.
 
-
+**Homework 1 evidence**: Note that I have also completed most of the version control features required by Assignment 1.
+* I have this README file to explain the project
+* I have well over 20 commits
+* I have 2 branches: master and experimental
+* I have merged experimental branch into master twice - the second time was a non fast forward merge
+* I have resolved 2 issues. Issue #2 was closed directly from a commit so you can see the link
+* I have a .gitignore file so that the photos I used for testing do not appear in the repository
