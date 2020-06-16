@@ -13,21 +13,29 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(16, 12, 127)</string>
+  </property>
   <widget class="QWidget" name="welcome">
    <widget class="QPushButton" name="new_mem_button">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>170</y>
+      <x>30</x>
+      <y>200</y>
       <width>221</width>
       <height>111</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>17</pointsize>
+     </font>
     </property>
     <property name="autoFillBackground">
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 60, 80)</string>
+     <string notr="true">background-color: rgb(119, 173, 170)</string>
     </property>
     <property name="text">
      <string>Add New Memory</string>
@@ -37,13 +45,18 @@
     <property name="geometry">
      <rect>
       <x>280</x>
-      <y>170</y>
+      <y>200</y>
       <width>221</width>
       <height>111</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 60, 80)</string>
+     <string notr="true">background-color: rgb(119, 173, 170)</string>
     </property>
     <property name="text">
      <string>Browse Old Memories</string>
@@ -55,11 +68,11 @@
       <x>80</x>
       <y>60</y>
       <width>391</width>
-      <height>61</height>
+      <height>101</height>
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; color:#039300;&quot;&gt;Welcome to Photojournal!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; color:#29b471;&quot;&gt;Welcome to &lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:600; color:#29b471;&quot;&gt;PhotoJournal&lt;/span&gt;&lt;span style=&quot; font-size:36pt; color:#29b471;&quot;&gt;!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
   </widget>
